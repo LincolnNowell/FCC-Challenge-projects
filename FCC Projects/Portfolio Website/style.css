@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+html{
+    font-family: 'Playfair Display', serif;
+}
+
+header{
+    background: #c6934b;
+    position: fixed;
+    width: 100%;
+    margin-top: -5px;
+    padding: 0px 0px 0px 0px;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header li{
+    list-style: none;
+    color: black;
+    padding: 0px 50px 0px 10px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+}
+
+.back{
+    background-image: url("code_1.jpg");
+    height: 700px;
+    width: 100%;
+    background-position: center;
+    padding-top: 50px;
+}
+
+.back .picture{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 330px;
+}
+#Me{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border: 5px solid black;
+    background-color: white;
+    opacity: .5;
+    width: 200px;
+    height: auto;
+}
+
+#Me:hover{
+    opacity: 1;
+}
+
+#Me h1{
+    font-size: 10px;  
+}
+
+.projects{
+    padding: 100px 0px 100px 0px;
+    display: grid;
+    grid-template-columns: repeat(2,45%);
+    grid-gap: 100px;
+    padding-left: 50px;
+    background-color: #2e3546;
+}
+
+.projects .tile{
+    height: 400px;
+    width: 100%;
+    border: 5px black solid;
+}
+
+.projects a{
+    text-decoration: none;
+    color: black;
+}
+#a{
+    background-image: url("TIC-TAC-TOE.png");
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 5px #283d70 solid;
+    border-radius: 5px;
+}
+
+
+#b{
+    background-image: url("C++\ Document\ Page.png");
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 5px #283d70 solid;
+    border-radius: 5px;
+}
+
+#c{
+    background-image: url("C++\ Document\ Page.png");
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 5px #283d70 solid;
+    border-radius: 5px;
+}
+
+.desc{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+
+.desc b{
+    align-self: center;
+    background: #e0ddd5;
+    color: #703529;
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.desc:hover{
+    font-size: 0;
+}
+
+
+.info{
+    height: 75px;
+    width: 100%;
+}
+
+
+.info ul{
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    padding: 0px 0px 0px 300px; 
+}
+
+.info li{
+    list-style: none;
+    border: 5px #283d70 solid;
+    border-radius: 5px;
+    width: 25%;
+    text-align: center;
+    margin: 20px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
+    background-color: #e0ddd5;
+}
+
+@media only screen and (max-width:920px){
+    
+    header ul{
+        justify-content: center;
+    }
+
+    #Me{
+        opacity: 1;
+    }
+
+    .projects{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+        grid-gap: 0;
+        padding-left: 0;
+    }
+
+    .info li{
+        width: 72%;
+    }
+
+    .info ul{
+        padding: 0px 50px 0px 50px;
+    }
+
+}
+
+
