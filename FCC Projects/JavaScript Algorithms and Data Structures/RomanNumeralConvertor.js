@@ -1,6 +1,5 @@
 function convertToRoman(num) {
     let numeral = "";
-    let next = num - (Math.floor(num * .1));
 
     while(num >= 1000){
         numeral+= "M";
