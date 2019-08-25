@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pomodoro Clock</title>
+        <link rel="Stylesheet" href="style.css">
+    </head>
+    <body>
+
+    <div class="sections">
+        <div class="name">
+            <h1>Pomodoro Clock</h1>
+        </div>
+        
+        <div class="buttons">
+            <div id="break-label">
+                <h1>Break Time</h1>
+                <div class="arrows">
+                    <button onclick='increment(1)'><i class="fas fa-arrow-up fa-2x"></i></button>
+                    <h3>5</h3>
+                    <button onclick='decrement(1)'><i class="fas fa-arrow-down fa-2x"></i></button>
+                </div>
+            </div>
+
+            <div id="session-label">
+                <h1>Session Time</h1>
+                <div class="arrows">
+                    <button onclick='increment(2)'><i class="fas fa-arrow-up fa-2x"></i></button>
+                    <h3>25</h3>
+                    <button onclick='decrement(2)'><i class="fas fa-arrow-down fa-2x"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="time">
+            <h1>25:00</h1>
+        </div>
+        <div id="controls">
+            <button onclick="play()"><i class="fas fa-play"></i></button>
+            <button onclick="pause()"><i class="fas fa-pause"></i></button>
+            <button onclick="restart()"><i class="fas fa-redo"></i></button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://kit.fontawesome.com/b15cd5eda0.js"></script>
+    </bod>
+</html>
