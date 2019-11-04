@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <link rel="Stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="author" content="Lincoln Nowell">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <div id="calc">
+            <div id="display" class="display">
+                
+            </div>
+            <div class='input'>
+                <div class="numbers">
+                    <button Onclick='reply_click(this.id)' id="divide">/</button>
+                    <button Onclick='reply_click(this.id)' id="multiply">*</button>
+                    <button Onclick='reply_click(this.id)' id="subtract">-</button>
+                    <button Onclick='reply_click(this.id)' id="seven">7</button>
+                    <button Onclick='reply_click(this.id)' id="eight">8</button>
+                    <button Onclick='reply_click(this.id)' id="nine">9</button>
+                    <button Onclick='reply_click(this.id)' id="four">4</button>
+                    <button Onclick='reply_click(this.id)' id="five">5</button>
+                    <button Onclick='reply_click(this.id)' id="six">6</button>
+                    <button Onclick='reply_click(this.id)' id="three">3</button>
+                    <button Onclick='reply_click(this.id)' id="two">2</button>
+                    <button Onclick='reply_click(this.id)' id="one">1</button>
+                    <button Onclick='reply_click(this.id)' id="zero">0</button>
+                    <button Onclick='reply_click(this.id)' id="decimal">.</button>
+                </div>
+                <div class='side_row'>
+                        <button Onclick='clear_output()' id="clear">CE</button>
+                        <button Onclick='reply_click(this.id)' id="add">+</button>
+                        <button Onclick='calculate()' id="equals">=</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js" type="text/javascript"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>

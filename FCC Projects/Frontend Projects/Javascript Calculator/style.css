@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+
+html{
+    padding: 0%;
+    margin: 0%;
+    background-color:  lightblue;
+}
+
+.button{
+    color: white;
+    background-color: silver;
+    border-radius: 7px;
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+}
+
+#calc{
+    display: grid;
+    flex-direction: column;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 580px;
+    background: gray;
+}
+
+.display{
+    margin: 10px;
+    border: solid black;
+    width: 95%;
+    text-align: end;
+    background: goldenrod;
+}
+
+.input{
+    display: flex;
+}
+
+.input .numbers{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 90%;
+}
+
+.input .top_row{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    width: 33.28%;
+
+}
+
+.input .side_row{
+    display: flex;
+    width: 50px;
+    flex-direction: column;
+}
+
+.input #clear{    
+    height: 110px;
+}
+
+.input #add{
+    height: 110px;
+}
+
+.input #equals{
+    height: 110px;
+}
