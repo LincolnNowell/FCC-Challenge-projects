@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+html{
+    padding: 0%;
+    margin: 0%;
+    background-color:  gray;
+}
+
+#drum-machine{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#drum-machine .controls{
+    margin-top: 250px;
+}
+
+#pads{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 100px;
+    background: red;
+    border-radius: 5px;
+}
+
+#pads button{
+    background: gray;
+    margin: 5px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+.numbers{
+    margin: 10px;
+    padding: 30px;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.numbers h1{
+    padding-left: 50px;
+}
+
+#display{
+    font-size: 24px;
+    background: brown;
+    border: 1px solid black;
+    min-width: 200px;
+    margin-left: 20px;
+    text-align: center;
+}
+

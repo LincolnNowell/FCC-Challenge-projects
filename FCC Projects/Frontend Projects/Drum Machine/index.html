@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drum Machine</title>
+        <link rel="Stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="author" content="Lincoln Nowell">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="drum-machine">
+            <div id="pads">
+                <button onclick="Click('Q','Human Bass')" class="drum-pad" id="bass"><audio id="Q" class="clip" src="sounds/HumanBass.wav"></audio><div class="numbers">Q</div></button>
+                <button onclick="Click('W','Human Close HH')" class="drum-pad" id="closeHH"><audio id="W" class="clip" src="sounds/HumanCloseHH.wav"></audio><div class="numbers">W</div></button>
+                <button onclick="Click('E','Human Kick')" class="drum-pad" id="kick"><audio id="E" class="clip" src="sounds/HumanKick.wav"></audio><div class="numbers">E</div></button>
+                <button onclick="Click('A','Human Trumpet')" class="drum-pad" id="trumpet"><audio id="A" class="clip" src="sounds/HumanTrumpet.wav"></audio><div class="numbers">A</div></button>
+                <button onclick="Click('S','Human Open HH')" class="drum-pad" id="openHH"><audio id="S" class="clip" src="sounds/HumanOpenHH.wav"></audio><div class="numbers">S</div></button>
+                <button onclick="Click('D','Human Percusion')" class="drum-pad" id="percusion"><audio id="D" class="clip" src="sounds/HumanPercusion.wav"></audio><div class="numbers">D</div></button>
+                <button onclick="Click('Z','Human Percusion 1')" class="drum-pad" id="percusion1"><audio id="Z" class="clip" src="sounds/HumanPercusion1.wav"></audio><div class="numbers">Z</div></button>
+                <button onclick="Click('X','Human Percusion 3')" class="drum-pad" id="percusion3"><audio id="X" class="clip" src="sounds/HumanPercusion3.wav"></audio><div class="numbers">X</div></button>
+                <button onclick="Click('C','Human Snare 2')" class="drum-pad" id="Snare"><audio id="C" class="clip" src="sounds/HumanSnare2.wav"></audio><div class="numbers">C</div></button>
+            </div>
+            <div class="controls">
+                <div id="display">&nbsp;</div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
