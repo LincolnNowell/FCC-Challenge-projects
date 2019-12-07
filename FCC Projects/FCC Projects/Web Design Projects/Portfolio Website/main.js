@@ -14,7 +14,6 @@ function restore(e){
     OriginalImage.className = "card-img-top";
     OriginalImage.src = e.target.id;
     OriginalImage.id = e.target.src;
-    console.log("yah");
     document.getElementById(e.target.id).replaceWith(OriginalImage);
 }
 
