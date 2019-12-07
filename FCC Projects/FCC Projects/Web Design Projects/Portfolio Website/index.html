@@ -1,58 +1,81 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lincoln Nowell Porfolio</title>
+        <title>Lincoln Nowell Portfolio</title>
+        <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" 
+        integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-
-    <header>
-        <nav id="navbar">
-            <ul>
-                <a href="#welcome-section"><li>About</li></a>
-                <a href="#Projects"><li>Projects</li></a>
-                <a href="#Contact"><li>Contact</li></a>
-            </ul>
-        </nav>
-    </header>
-
     <body>
-        <div class="back" id="welcome-section">
-            <div class="picture">
-                <div id="Me">
-                    <img src="" alt="Lincoln Nowell">
-                    <h1>Welcome My Name is Lincoln Nowell</h1>
+        <div class="back">
+            <div class="card" id=frame>
+                <a href="https://github.com/LincolnNowell">
+                    <img class="card-img-top" src="images/ProfilePic.jpg">
+                    <div class="card-body">
+                        <p>My Name is Lincoln Nowell</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="Project_Title">
+            <h1>Projects</h1>
+        </div>
+        
+        <div class="container">
+            <div class="proj">
+
+                <div class="card" id="1">
+                    <img class="card-img-top" src="images/Equation Balancer.png" id="videos/Equation.webm">
+                    <div class="card-body">
+                        <p>Chemical Equation Balancer written using C++, QT Framework, and Eigen Linear Algebra library</p>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="projects" id="Projects">
-            <div class="project-tile">
-                <a href="https://github.com/LincolnNowell/Tic-Tac_Toe-"  target="_blank">
-                    <div id="a">
-                        <div class="desc">
-                            <b>A C++ Tic Tac Toe Game</b>
-                        </div>
+ 
+                <div class="card" id="2">
+                    <img class="card-img-top" src="images/Drum Machine.png" id="videos/DrumMachine.webm">
+                    <div class="card-body">
+                        <p>Drum Machine</p>
                     </div>
-                </a>
+                </div>
+
+
+                <div class="card" id="3">
+                    <img class="card-img-top" src="images/TIC-TAC-TOE.png" id="videos/Tic_Tac_Toe.webm">
+                    <div class="card-body">
+                        <p>Tic Tac Toe Game made using C++ and the QT Framework</p>
+                    </div>
+                </div>
+
+
+                <div class="card" id="4">
+                    <img class="card-img-top" src="images/C++ Documentation Page.png" id="videos/C++ WebSite.webm">
+                    <div class="card-body">
+                        <p>C++ Documentation Page</p>
+                    </div>
+                </div>
 
             </div>
-            <div class="project-tile">
-                <a href="https://codepen.io/lincolnnowell/pen/drMgLN"  target="_blank">
-                    <div id="b">
-                        <div class="desc">
-                            <b>A C++ Documentation Page</b>
-                        </div>
-                    </div>
-                </a>
+        </div>
+        <footer class="info">
+            <div id="imgWin">
+                <img id="ImageMe" src="images/ProfilePic.jpg">
             </div>
-        </div>
-        <div class="info" id="Contact">
-            <ul>
-                <a href="https://github.com/LincolnNowell" id="profile-link"><li>GitHub</li></a>
-                <li>Email</li>
-                <li>Phone</li>
-            </ul>
-        </div>
+            <div class="description">
+                <h1>My name is Lincoln Nowell, I am a hobbyiest programmer and aspiring software developer</h1>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" 
+        integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+        
     </body>
 </html>

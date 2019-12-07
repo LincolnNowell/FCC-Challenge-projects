@@ -1,40 +1,78 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
-html{
+body{
+    background-color: #2e3546;
     font-family: 'Playfair Display', serif;
 }
 
-header{
-    background: #c6934b;
-    position: fixed;
-    width: 100%;
-    margin-top: -5px;
-    padding: 0px 0px 0px 0px;
+img{
+    width: 20px;
 }
 
-header ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-header li{
-    list-style: none;
+a:link, a:visited {
     color: black;
-    padding: 0px 50px 0px 10px;
-}
-
-header a{
     text-decoration: none;
 }
 
-body{
-    margin: 0;
+a:link:active, a:visited:active {
+    color: black;
+}
+
+#frame{
+    height: 300px;
+    width: 200px;
+    margin-left: 39%;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.card{
+    border: 5px solid rgb(231, 229, 229);
+}
+
+.card:hover{
+    box-shadow: 5px 10px #888888;
+}
+@media only screen and (max-width: 321px) {
+    .proj{
+        display: flex;
+        flex-direction: column;
+    }
+    #frame{
+        margin-left: 42%;
+    }
+    #imgWin{
+        display: flex;
+        margin-left: 25%;
+        margin-top: 20%;
+    }
+    #ImageMe{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    .proj{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .proj .card{
+        margin-top: 50px;
+        margin-left: 25px;
+    }    
+    #frame{
+        margin-left: 43.5%;
+    }
+}
+
+.proj .card{
+    margin-top: 50px;
 }
 
 .back{
-    background-image: url("code_1.jpg");
-    height: 700px;
+    background-image: url("images/code_1.jpg");
+    height: 100vh;
     width: 100%;
     background-position: center;
     padding-top: 50px;
@@ -58,6 +96,14 @@ body{
     height: auto;
 }
 
+.Project_Title{
+    background: rgb(51, 52, 53);
+    text-align: center;
+    height: 100px;
+    color: gold;
+    padding-top: 20px;
+}
+
 #Me:hover{
     opacity: 1;
 }
@@ -65,128 +111,28 @@ body{
 #Me h1{
     font-size: 10px;  
 }
-
-.projects{
-    padding: 100px 0px 100px 0px;
-    display: grid;
-    grid-template-columns: repeat(2,45%);
-    grid-gap: 100px;
-    padding-left: 50px;
-    background-color: #2e3546;
-}
-
-.projects .tile{
-    height: 400px;
-    width: 100%;
-    border: 5px black solid;
-}
-
-.projects a{
-    text-decoration: none;
-    color: black;
-}
-#a{
-    background-image: url("TIC-TAC-TOE.png");
-    height: 400px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border: 5px #283d70 solid;
-    border-radius: 5px;
-}
-
-
-#b{
-    background-image: url("C++\ Document\ Page.png");
-    height: 400px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border: 5px #283d70 solid;
-    border-radius: 5px;
-}
-
-#c{
-    background-image: url("C++\ Document\ Page.png");
-    height: 400px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border: 5px #283d70 solid;
-    border-radius: 5px;
-}
-
-.desc{
+#imgWin{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    height: 100%;
 }
 
-.desc b{
-    align-self: center;
-    background: #e0ddd5;
-    color: #703529;
-    width: 200px;
-    height: auto;
-    border-radius: 5px;
+#ImageMe{
+    height: 60%;
+    width: 50%;
+    border: 5px lightblue solid;
+    border-radius: 25%;
+    margin-left: 200px;
 }
-
-.desc:hover{
-    font-size: 0;
-}
-
-
-.info{
-    height: 75px;
-    width: 100%;
-}
-
-
-.info ul{
+footer{
+    background: lightslategrey;
     display: grid;
-    grid-template-columns: repeat(3, calc(100% / 3));
-    padding: 0px 0px 0px 300px; 
+    grid-template-columns: 40% 60%;
+    margin-top: 10px;
+    border-top: 5px solid #02040a;
 }
 
-.info li{
-    list-style: none;
-    border: 5px #283d70 solid;
-    border-radius: 5px;
-    width: 25%;
-    text-align: center;
-    margin: 20px 10px 20px 10px;
-    padding: 20px 10px 20px 10px;
-    background-color: #e0ddd5;
+footer .description{
+    margin-top: 10%;
+    padding: 50px 30px 30px 50px;
+    justify-content: center;
+    text-align: left center;
 }
-
-@media only screen and (max-width:920px){
-    
-    header ul{
-        justify-content: center;
-    }
-
-    #Me{
-        opacity: 1;
-    }
-
-    .projects{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 0;
-        grid-gap: 0;
-        padding-left: 0;
-    }
-
-    .info li{
-        width: 72%;
-    }
-
-    .info ul{
-        padding: 0px 50px 0px 50px;
-    }
-
-}
-
-
