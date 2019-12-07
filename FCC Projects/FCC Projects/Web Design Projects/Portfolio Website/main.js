@@ -5,6 +5,7 @@ function hover(e){
     VideoPreview.src = e.target.id;
     VideoPreview.id = e.target.src;
     VideoPreview.autoplay = true;
+    VideoPreview.muted = true;
     document.getElementById(e.target.id).replaceWith(VideoPreview);
 }
 
