@@ -22,7 +22,7 @@ function loadEvents(){
     //skip the title card
     for(let index = 1; index < card.length; index++){
         card.item(index).children[0].addEventListener("mouseenter",hover);
-        card.item(index).children[0].addEventListener("mouseleave",restore);
+        //card.item(index).children[0].addEventListener("mouseleave",restore);
     }
 }
 
