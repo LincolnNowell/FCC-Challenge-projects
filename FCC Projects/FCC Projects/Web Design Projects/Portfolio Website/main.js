@@ -15,7 +15,6 @@ function hover(e){
 }
 
 function restore(e){
-    console.log("Connected");
     let OriginalImage = document.createElement('img');
     OriginalImage.className = "card-img-top";
     OriginalImage.src = e.target.id;
